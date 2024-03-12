@@ -33,3 +33,15 @@ model = fact.create_model_from_pickled('pickled_model.pkl')
 print(model.model_class)
 print(model.pickled_model)
 print(model.params)
+
+
+print("BaseModel setting exemple")
+fact = ModelFactories.ModelFactory()
+model = fact.create_model_from_pickled('pickled_model.pkl')
+# print(Models.BaseModelManager.get_instance())
+Models.BaseModelManager.set_base_model(model)
+print(Models.BaseModelManager.get_instance())
+# Models.BaseModelManager.set_base_model(model)
+
+
+

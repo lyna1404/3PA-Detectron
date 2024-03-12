@@ -48,6 +48,21 @@ class XGBoostModel(Model):
         dtest = xgb.DMatrix(X)
         return self.model.predict(dtest)
 
+class BaseModelManager(Model):
+    __baseModel = None
 
+    @classmethod
+    def set_base_model(cls, model):
+        if cls.__baseModel is None:
+            cls.__baseModel = model
+        else:
+            raise TypeError("The Base Model has already been initialized")
+
+    @classmethod
+    def get_instance(cls):
+        if cls.__baseModel is None:
+            raise TypeError("The Base Model has not been initialized yet")
+        else:
+            return cls.__baseModel
 
 

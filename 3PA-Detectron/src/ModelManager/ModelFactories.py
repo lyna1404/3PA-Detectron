@@ -1,5 +1,5 @@
 import pickle
-from Models import Model, XGBoostModel
+from Models import Model, XGBoostModel, BaseModelManager
 import xgboost as xgb
 
 class ModelFactory:
@@ -18,7 +18,7 @@ class ModelFactory:
         else:
             raise ValueError(f"No factory available for model type: {model_type}")
 
-    def create_model_with_hyperparams(self, model_type, hyperparams=None):
+    def create_model_with_hyperparams(self, model_type, hyperparams : dict):
         factory_name = self.get_factory(model_type)
         factory = globals()[factory_name]()
         return factory.create_model_with_hyperparams(hyperparams)
@@ -45,7 +45,6 @@ class ModelFactory:
     
 class XGBoostFactory(ModelFactory):
     def create_model_with_hyperparams(self, hyperparams):
-        # Logic to create an XGBoost model with hyperparameters
         return XGBoostModel(hyperparams)
 
     def create_model_from_pickled(self, loaded_model, model_class):
