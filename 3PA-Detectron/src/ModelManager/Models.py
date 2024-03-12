@@ -1,4 +1,5 @@
 import xgboost as xgb
+from xgboost.sklearn import XGBClassifier
 
 class Model:
     def train(self, X, y):
@@ -8,24 +9,25 @@ class Model:
         pass
 
 class XGBoostModel(Model):
-    def __init__(self, model_path=None, params=None):
+    def __init__(self, params_or_model=None, model_class=None):
         """
-        Initialize the XGBoostModel.
-        :param model_path: Path to a saved XGBoost model. If provided, load the model from this path.
-        :param params: Dictionary of parameters for the booster model.
+        Initialize the XGBoostModel using params or a loaded pickled model.
+        :param params_or_model: Either a dictionary of parameters for the booster model or a loaded pickled model.
+        :param model_class: Class of the model if a pickled model is provided.
         """
-        self.params = params or {'objective': 'binary:logistic'}
+        self.params = None
         self.model = None
-        if model_path:
-            self.load_model(model_path)
-
-    def load_model(self, model_path):
-        """
-        Load the model from a file.
-        :param model_path: Path to the model file.
-        """
-        self.model = xgb.Booster()
-        self.model.load_model(model_path)
+        self.model_class = None
+        self.pickled_model = False
+        
+        if model_class is None : 
+            self.params = params_or_model
+            self.model_class = xgb.Booster
+            self.pickled_model = False
+        else:  
+            self.model = params_or_model
+            self.model_class = model_class
+            self.pickled_model = True
 
     def train(self, X, y, num_boost_round=10):
         """
