@@ -6,6 +6,7 @@ import pickle
 import numpy as np
 from xgboost.sklearn import XGBClassifier
 
+
 """loaded_model = xgboost.Booster()
 loaded_model.load_model('uci_heart_0.model')
 pickle.dump(loaded_model, open('pickled_model.pkl','wb'))"""
@@ -73,3 +74,16 @@ classifier_model.fit(features, labels)
 # Pickle the xgb.XGBClassifier model
 with open('classifier_model.pkl', 'wb') as file:
     pickle.dump(classifier_model, file)
+
+
+
+xgbmodel = Models.XGBoostModel(params)
+xgb_mat = xgbmodel._ensure_dmatrix(features, labels)
+
+print(type(xgb_mat))
+#xgb_mat2 = xgbmodel._ensure_dmatrix(xgb_mat, labels)
+#print(type(xgb_mat2))
+
+xgb_mat3 = xgb.DMatrix(data=xgb_mat)
+print(type(xgb_mat3))
+
