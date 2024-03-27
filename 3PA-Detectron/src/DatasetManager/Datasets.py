@@ -95,6 +95,7 @@ class DatasetsManager:
         self.base_model_validation_set = None
         self.reference_set = None
         self.testing_set = None
+        self.column_labels = None
 
     def set_baseModel_training_data(self, baseModel_training_file, target_column_name):
         """
@@ -106,8 +107,17 @@ class DatasetsManager:
         """
         try:
             ctx = DataLoadingContext(baseModel_training_file)
-            features_np, true_labels_np = ctx.load_as_np(baseModel_training_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_training_file, target_column_name)
             self.base_model_training_set = MaskedDataset(features_np, true_labels_np)
+            # If self.column_labels is None, set it
+            if self.column_labels is None:
+                self.column_labels = column_labels
+            else:
+                # Compare extracted column labels with self.column_labels
+                if self.column_labels != column_labels:
+                    raise ValueError("Column labels extracted from the dataset do not match "
+                                    "the existing column labels.")
+                
         except ValueError as e:
             print(f"Error setting base model training set: {e}")
 
@@ -121,8 +131,16 @@ class DatasetsManager:
         """
         try:
             ctx = DataLoadingContext(baseModel_validation_file)
-            features_np, true_labels_np = ctx.load_as_np(baseModel_validation_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_validation_file, target_column_name)
             self.base_model_validation_set = MaskedDataset(features_np, true_labels_np)
+            # If self.column_labels is None, set it
+            if self.column_labels is None:
+                self.column_labels = column_labels
+            else:
+                # Compare extracted column labels with self.column_labels
+                if self.column_labels != column_labels:
+                    raise ValueError("Column labels extracted from the dataset do not match "
+                                    "the existing column labels.")
         except ValueError as e:
             print(f"Error setting base model validation set: {e}")
 
@@ -137,8 +155,16 @@ class DatasetsManager:
         """
         try:
             ctx = DataLoadingContext(reference_file)
-            features_np, true_labels_np = ctx.load_as_np(reference_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(reference_file, target_column_name)
             self.reference_set = MaskedDataset(features_np, true_labels_np)
+            # If self.column_labels is None, set it
+            if self.column_labels is None:
+                self.column_labels = column_labels
+            else:
+                # Compare extracted column labels with self.column_labels
+                if self.column_labels != column_labels:
+                    raise ValueError("Column labels extracted from the dataset do not match "
+                                    "the existing column labels.")
         except ValueError as e:
             print(f"Error setting reference set: {e}")
 
@@ -153,7 +179,15 @@ class DatasetsManager:
         try:
             ctx = DataLoadingContext(testing_file)
             features_np, true_labels_np = ctx.load_as_np(testing_file, target_column_name)
-            self.testing_set = MaskedDataset(features_np, true_labels_np)
+            column_labels, self.testing_set = MaskedDataset(features_np, true_labels_np)
+            # If self.column_labels is None, set it
+            if self.column_labels is None:
+                self.column_labels = column_labels
+            else:
+                # Compare extracted column labels with self.column_labels
+                if self.column_labels != column_labels:
+                    raise ValueError("Column labels extracted from the dataset do not match "
+                                    "the existing column labels.")
         except ValueError as e:
             print(f"Error setting testing set: {e}")
 
