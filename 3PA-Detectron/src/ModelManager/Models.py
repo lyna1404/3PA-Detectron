@@ -1,6 +1,8 @@
 import xgboost as xgb
 from xgboost.sklearn import XGBClassifier
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import DecisionTreeRegressor
+
 from sklearn.model_selection import GridSearchCV
 import numpy as np
 from DataPreparingStrategy import ToDmatrixStrategy, ToNumpyStrategy
@@ -175,3 +177,66 @@ class RandomForestRegressorModel(Model):
             np_X, _ = self._ensure_numpy_arrays(X)
             self.model.predict(np_X)      
         
+
+class DecisionTreeRegressorModel(Model):
+    """
+    A concrete implementation of the Model class for DecisionTree models, to be used with Med3pa sub-module.
+    """
+    def __init__(self, params):
+        """
+        Initializes the DecisionTreeRegressorModel with a sklearn RandomForestRegressor.
+
+        :param params_or_model: Either a dictionary of parameters for the booster model or a loaded pickled model.
+        :param model_class: Specifies the class of the model if a pickled model is provided. Defaults to xgb.Booster if None.
+        """
+        self.params = params
+        self.model = DecisionTreeRegressor(params)
+        self.model_class = DecisionTreeRegressor
+        self.pickled_model = False
+        self.data_preparation_strategy = ToNumpyStrategy()
+
+    def set_model(self, model : DecisionTreeRegressor):
+        self.model = model
+    def _ensure_numpy_arrays(self, features, labels=None):
+        """
+        Ensures that the input data is converted to NumPy array format. 
+
+        :param features: Features data, which can be in various formats like lists, Pandas DataFrames, or already in NumPy arrays.
+        :param labels: Labels data, optional, similar to features in that it can be in various formats.
+        :return: The features and labels (if provided) as NumPy arrays.
+        """
+        if not isinstance(features, np.ndarray) or not isinstance(labels, np.ndarray):
+            return self.data_preparation_strategy.execute(features, labels)
+        else: 
+            return features, labels
+
+    def train(self, X, y):
+        """
+        Trains the model on the provided dataset.
+
+        :param X: Features for training.
+        :param y: Labels for training.
+        :raises
+            ValueError: If the DecisionTreeRegressor has not been initialized before training.
+        """
+        if self.model is None:
+                raise ValueError("The DecisionTreeRegressor has not been initialized.")
+        else:
+            np_X, np_y = self._ensure_numpy_arrays(X, y)
+            self.model.fit(np_X, np_y)      
+       
+    def predict(self, X):
+        """
+        Makes predictions with the model for the given input.
+
+        :param X: Features for prediction.
+        :return: Predictions made by the model.
+        :raises
+            ValueError: If the DecisionTreeRegressor has not been initialized before training.
+        """
+        
+        if self.model is None:
+                raise ValueError("The DecisionTreeRegressor has not been initialized.")
+        else:
+            np_X, _ = self._ensure_numpy_arrays(X)
+            self.model.predict(np_X)      

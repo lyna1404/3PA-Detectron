@@ -84,3 +84,29 @@ class ToNumpyStrategy(DataPreparingStrategy):
             raise ValueError("Cannot build a NumPy array from an empty labels array.")
 
         return features_np, labels_np
+    
+class ToDataframesStrategy(DataPreparingStrategy): 
+    
+    def execute(self, column_labels, features, labels=None):
+        """
+        Convert NumPy arrays X and Y into separate pandas DataFrames with specified column labels for X.
+
+        Parameters:
+        - features: NumPy array representing the features.
+        - labels: NumPy array representing the target values.
+        - column_labels: List containing column labels for X.
+
+        Returns:
+        - X_df: A pandas DataFrame with X and its corresponding column labels.
+        - Y_df: A pandas DataFrame with Y.
+        """
+        # Convert X array to DataFrame
+        X_df = pd.DataFrame(features, columns=column_labels)
+
+        # Convert Y array to DataFrame without column label
+        if labels is not None:
+            Y_df = pd.DataFrame(labels) 
+        else:
+            Y_df = None
+            
+        return X_df, Y_df
