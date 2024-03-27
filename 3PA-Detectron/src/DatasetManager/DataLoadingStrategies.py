@@ -15,10 +15,11 @@ class CSVDataLoadingStrategy(DataLoadingStrategy):
         # Separate features and target
         features = df.drop(columns=[target_column_name])  
         target = df[target_column_name]  
-        
+        column_labels = features.columns.tolist()
+
         # Convert to NumPy arrays
         features_np = features.to_numpy()
         target_np = target.to_numpy()
         
-        return features_np, target_np
+        return column_labels, features_np, target_np
 
