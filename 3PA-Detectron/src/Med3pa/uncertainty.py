@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-import Numpy as np
+import numpy as np
 
 class UncertaintyMetric(ABC):
     @abstractmethod

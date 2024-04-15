@@ -1,6 +1,6 @@
 import pickle
 from io import BytesIO
-from Models import Model
+from .Models import Model
 
 class BaseModelManager:
     __baseModel = None

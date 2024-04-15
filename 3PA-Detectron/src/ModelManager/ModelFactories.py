@@ -1,5 +1,5 @@
 import pickle
-from Models import Model, XGBoostModel
+from .Models import Model, XGBoostModel
 import xgboost as xgb
 
 class ModelFactory:

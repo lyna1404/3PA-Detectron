@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeRegressor
 
 from sklearn.model_selection import GridSearchCV
 import numpy as np
-from DataPreparingStrategy import ToDmatrixStrategy, ToNumpyStrategy
+from .DataPreparingStrategy import ToDmatrixStrategy, ToNumpyStrategy
 
 class Model:
     """
@@ -126,7 +126,7 @@ class RandomForestRegressorModel(Model):
         :param model_class: Specifies the class of the model if a pickled model is provided. Defaults to xgb.Booster if None.
         """
         self.params = params
-        self.model = RandomForestRegressor(params)
+        self.model = RandomForestRegressor(**params)
         self.model_class = RandomForestRegressor
         self.pickled_model = False
         self.data_preparation_strategy = ToNumpyStrategy()
@@ -175,7 +175,7 @@ class RandomForestRegressorModel(Model):
                 raise ValueError("The RandomForestRegressor has not been initialized.")
         else:
             np_X, _ = self._ensure_numpy_arrays(X)
-            self.model.predict(np_X)      
+            return self.model.predict(np_X)      
         
 
 class DecisionTreeRegressorModel(Model):
@@ -190,7 +190,7 @@ class DecisionTreeRegressorModel(Model):
         :param model_class: Specifies the class of the model if a pickled model is provided. Defaults to xgb.Booster if None.
         """
         self.params = params
-        self.model = DecisionTreeRegressor(params)
+        self.model = DecisionTreeRegressor(**params)
         self.model_class = DecisionTreeRegressor
         self.pickled_model = False
         self.data_preparation_strategy = ToNumpyStrategy()
@@ -239,4 +239,4 @@ class DecisionTreeRegressorModel(Model):
                 raise ValueError("The DecisionTreeRegressor has not been initialized.")
         else:
             np_X, _ = self._ensure_numpy_arrays(X)
-            self.model.predict(np_X)      
+            return self.model.predict(np_X)      
