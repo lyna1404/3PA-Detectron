@@ -1,9 +1,11 @@
-import unittest
 import numpy as np
 import os
+import unittest
+
 from DataLoadingContext import DataLoadingContext
 from DataLoadingStrategies import CSVDataLoadingStrategy
 from Datasets import DatasetsManager
+
 
 class TestDatasetsManager(unittest.TestCase):
     @classmethod
@@ -44,10 +46,12 @@ class TestDatasetsManager(unittest.TestCase):
         self.assertIsInstance(features, np.ndarray)
         self.assertIsInstance(labels, np.ndarray)
         self.assertEqual(len(features), len(labels))
+    
     @classmethod
     def tearDownClass(cls):
         """Clean up after tests."""
         os.remove(cls.sample_csv)
+
 
 if __name__ == '__main__':
     unittest.main()

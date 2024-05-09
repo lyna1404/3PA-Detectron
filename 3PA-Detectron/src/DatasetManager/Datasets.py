@@ -2,9 +2,11 @@ import numpy as np
 from torch.utils.data import Dataset
 from DataLoadingContext import DataLoadingContext
 
+
 class MaskedDataset(Dataset):
     """
-    A dataset wrapper for PyTorch that supports masking of data points, useful for semi-supervised learning scenarios.
+    A dataset wrapper for PyTorch that supports masking of data points, 
+    useful for semi-supervised learning scenarios.
     
     Attributes:
         features (np.ndarray): The feature vectors of the dataset.
@@ -17,13 +19,17 @@ class MaskedDataset(Dataset):
     
     def __init__(self, features: np.ndarray, true_labels: np.ndarray, mask=True, pseudo_labels: np.ndarray = None):
         """
-        Initializes the MaskedDataset.
+        Initialize the MaskedDataset.
 
-        Parameters:
-            features (np.ndarray): The feature vectors of the dataset.
-            true_labels (np.ndarray): The true labels of the dataset.
-            mask (bool, optional): Indicates if the dataset is masked. Defaults to True.
-            pseudo_labels (np.ndarray, optional): The pseudo labels for masked data points. Defaults to None.
+        
+        :param features: The feature vectors of the dataset.
+        :type features:  np.ndarray
+        :param true_labels: The true labels of the dataset.
+        :type true_labels: np.ndarray
+        :param mask: Indicates if the dataset is masked. Defaults to True.
+        :type mask: (bool, optional)
+        :param pseudo_labels: The pseudo labels for masked data points. Defaults to None.
+        :type pseudo_labels: (np.ndarray, optional)
         """
         self.features = features
         self.true_labels = true_labels
@@ -32,15 +38,16 @@ class MaskedDataset(Dataset):
         self.indices = np.arange(len(self.features))
         self.original_indices = self.indices.copy()
 
-    def __getitem__(self, index):
+    def __getitem__(self, index:int):
         """
-        Retrieves the data point and its label(s) at the given index.
+        Retrieve the data point and its label(s) at the given index.
 
-        Parameters:
-            index (int): The index of the data point.
+        :param index: The index of the data point.
+        :type index: int
 
-        Returns:
-            tuple: A tuple containing the feature vector, pseudo label, true label, and mask flag for the data point.
+        :return: A tuple containing the feature vector, the true, pseudo label and the
+          mask flag for the data point.
+        :rtype: (np.ndarray,np.ndarray,np.ndarray)
         """
         index = self.indices[index]
         x = self.features[index]
@@ -50,64 +57,72 @@ class MaskedDataset(Dataset):
 
     def refine(self, mask: np.ndarray):
         """
-        Refines the dataset by applying a mask to select specific data points.
+        Refine the dataset by applying a mask to select specific data points.
 
-        Parameters:
-            mask (np.ndarray): A boolean array indicating which data points to keep.
+        :param mask: A boolean array indicating which data points to keep.
+        :type mask: np.ndarray
         """
         self.indices = self.indices[mask]
 
     def original(self):
         """
-        Creates a new MaskedDataset instance with the original dataset without any applied mask.
+        Create a new MaskedDataset instance with the original dataset without any applied mask.
 
-        Returns:
-            MaskedDataset: A new instance of the dataset with the original data.
+        :param MaskedDataset: A new instance of the dataset with the original data. 
+        :type MaskedDataset: MaskedDataset
         """
         return MaskedDataset(self.features, self.true_labels, mask=False, pseudo_labels=self.pseudo_labels)
 
     def reset_index(self):
-        """Resets the indices of the dataset to the original indices."""
+        """Reset the indices of the dataset to the original indices."""
         self.indices = self.original_indices.copy()
 
     def __len__(self):
         """
-        Gets the number of data points in the dataset.
+        Get the number of data points in the dataset.
 
-        Returns:
-            int: The number of data points.
+        
+        :return: The number of data points.
+        :rtype: int
         """
         return len(self.indices)
 
 
-
 class DatasetsManager:
     """
-    Manages various datasets for different phases of machine learning model development.
+    Manage various datasets for different phases of machine learning model development.
     
-    This manager is responsible for loading and holding different sets of data, including training, validation,
-    reference, and testing datasets.
+    This manager is responsible for loading and holding different sets of data, 
+    including training, validation,reference, and testing datasets.
     """
     
     def __init__(self):
-        """Initializes the DatasetsManager with empty datasets."""
+        """
+        Initialize the DatasetsManager with empty datasets.
+        """
         self.base_model_training_set = None
         self.base_model_validation_set = None
         self.reference_set = None
         self.testing_set = None
         self.column_labels = None
 
-    def set_baseModel_training_data(self, baseModel_training_file, target_column_name):
+    def set_baseModel_training_data(self, baseModel_training_file:str, target_column_name:str):
         """
-        Loads and sets the base model training dataset from a file.
+        Load and set the base model training dataset from a file.
 
-        Parameters:
-            baseModel_training_file (str): The file path to the training data.
-            target_column_name (str): The name of the target column in the dataset.
+        :param baseModel_training_file: The file path to the training data.
+        :type baseModel_training_file: str
+        :param target_column_name: The name of the column that contains the target variable.
+        :type target_column_name: str
+
+        :raises ValueError: Raises an assertion error if the name of columns in the training data 
+        does not match the given column names.
+        :raises ValueError: If loading the training set fails.
         """
         try:
             ctx = DataLoadingContext(baseModel_training_file)
-            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_training_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_training_file, 
+                                                                        target_column_name)
             self.base_model_training_set = MaskedDataset(features_np, true_labels_np)
             # If self.column_labels is None, set it
             if self.column_labels is None:
@@ -121,17 +136,23 @@ class DatasetsManager:
         except ValueError as e:
             print(f"Error setting base model training set: {e}")
 
-    def set_baseModel_validation_data(self, baseModel_validation_file, target_column_name):
+    def set_baseModel_validation_data(self, baseModel_validation_file:str, target_column_name:str):
         """
-        Loads and sets the base model validation dataset from a file.
+        Loas and set the base model validation dataset from a file.
 
-        Parameters:
-            baseModel_validation_file (str): The file path to the validation data.
-            target_column_name (str): The name of the target column in the dataset.
+        :param baseModel_validation_file: The file path to the validation data.
+        :type baseModel_validation_file: str
+        :param target_column_name: The name of the target column in the dataset.
+        :type target_column_name: str
+
+        :raises ValueError: Raises an assertion error if the name of columns in the validation data 
+        does not match the given column names.
+        :raises ValueError: If loading the validation set fails.
         """
         try:
             ctx = DataLoadingContext(baseModel_validation_file)
-            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_validation_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(baseModel_validation_file, 
+                                                                        target_column_name)
             self.base_model_validation_set = MaskedDataset(features_np, true_labels_np)
             # If self.column_labels is None, set it
             if self.column_labels is None:
@@ -145,17 +166,23 @@ class DatasetsManager:
             print(f"Error setting base model validation set: {e}")
 
     
-    def set_reference_data(self, reference_file, target_column_name):
+    def set_reference_data(self, reference_file:str, target_column_name:str):
         """
-        Loads and sets the reference dataset from a file.
+        Load and set the reference dataset from a file.
 
-        Parameters:
-            reference_file (str): The file path to the reference data.
-            target_column_name (str): The name of the target column in the dataset.
+        :param reference_file: The file path to the reference data.
+        :type reference_file: str
+        :param target_column_name: The name of the target column in the dataset.
+        :type target_column_name: str
+
+        :raises ValueError: Raises an assertion error if the name of columns in the reference data 
+        does not match the given column names.
+        :raises ValueError: If loading the reference dataset fails.
         """
         try:
             ctx = DataLoadingContext(reference_file)
-            column_labels, features_np, true_labels_np = ctx.load_as_np(reference_file, target_column_name)
+            column_labels, features_np, true_labels_np = ctx.load_as_np(reference_file, 
+                                                                        target_column_name)
             self.reference_set = MaskedDataset(features_np, true_labels_np)
             # If self.column_labels is None, set it
             if self.column_labels is None:
@@ -168,13 +195,18 @@ class DatasetsManager:
         except ValueError as e:
             print(f"Error setting reference set: {e}")
 
-    def set_testing_data(self, testing_file, target_column_name):
+    def set_testing_data(self, testing_file:str, target_column_name:str):
         """
-        Loads and sets the testing dataset from a file.
+        Load and set the testing dataset from a file.
 
-        Parameters:
-            testing_file (str): The file path to the testing data.
-            target_column_name (str): The name of the target column in the dataset.
+        :param testing_file: The file path to the testing data.
+        :type testing_file: str
+        :param target_column_name: The name of the target column in the dataset.
+        :type target_column_name: str
+
+        :raises ValueError: Raises an assertion error if the name of columns in the testing data 
+        does not match the given column names.
+        :raises ValueError: If loading the testing set fails.
         """
         try:
             ctx = DataLoadingContext(testing_file)
@@ -194,6 +226,11 @@ class DatasetsManager:
     def get_base_model_training_data(self):
         """
         getter for the trainig dataset.
+        
+        :return: A tuple containing the feature matrix X and the label vector y.
+        :rtype: (np.ndarray,np.ndarray)
+
+        :raises ValueError: If the Base model training set is not initialized
         """
         if self.base_model_training_set is not None:
             return self.base_model_training_set.features, self.base_model_training_set.true_labels
@@ -203,6 +240,11 @@ class DatasetsManager:
     def get_base_model_validation_data(self):
         """
         getter for the validation dataset.
+
+        :return: A tuple containing the feature matrix X and the label vector y.
+        :rtype: (np.ndarray,np.ndarray)
+
+        :raises ValueError: If the Base model validation set is not initialized
         """
         if self.base_model_validation_set is not None:
             return self.base_model_validation_set.features, self.base_model_validation_set.true_labels
@@ -212,6 +254,11 @@ class DatasetsManager:
     def get_reference_data(self):
         """
         getter for the reference dataset.
+
+        :return: A tuple containing the feature matrix X and the label vector y.
+        :rtype: (np.ndarray,np.ndarray)
+
+        :raises ValueError: If the Base model reference set is not initialized
         """
         if self.reference_set is not None:
             return self.reference_set.features, self.reference_set.true_labels
@@ -221,6 +268,11 @@ class DatasetsManager:
     def get_testing_data(self):
         """
         getter for the testing dataset.
+
+        :return: A tuple containing the feature matrix X and the label vector y.
+        :rtype: (np.ndarray,np.ndarray)
+
+        :raises ValueError: If the Base model testing set is not initialized
         """
         if self.testing_set is not None:
             return self.testing_set.features, self.testing_set.true_labels

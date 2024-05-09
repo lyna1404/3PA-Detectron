@@ -1,11 +1,10 @@
-import ModelFactories
-import Models
-import BaseModel
+
 import xgboost as xgb
 import pickle
 import numpy as np
 from xgboost.sklearn import XGBClassifier
 
+import Models
 
 """loaded_model = xgboost.Booster()
 loaded_model.load_model('uci_heart_0.model')

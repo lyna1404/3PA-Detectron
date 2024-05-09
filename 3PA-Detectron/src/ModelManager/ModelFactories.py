@@ -1,10 +1,12 @@
 import pickle
-from Models import Model, XGBoostModel
 import xgboost as xgb
+
+from .Models import Model, XGBoostModel
 
 class ModelFactory:
     """
     A factory class for creating models with different types, using the factory design pattern.
+   
     It supports creating models based on hyperparameters or loading them from pickled files.
     """
     
@@ -21,15 +23,15 @@ class ModelFactory:
     @staticmethod
     def get_factory(model_type: str):
         """
-        Retrieves the factory object for the given model type.
+        Retrieve the factory object for the given model type.
 
-        Parameters:
-            model_type (str): The type of model for which the factory is to be retrieved.
+        :param model_type: The type of model for which the factory is to be retrieved.
+        :type model_type: str
 
-        Returns:
-            An instance of the factory associated with the given model type.
+        :return: An instance of the factory associated with the given model type.
+        :rtype: ModelFactory (Specific)
 
-        Raises:
+        :raises:
             ValueError: If no factory is available for the given model type.
         """
         factory_initializer = ModelFactory.factories.get(model_type)
@@ -41,14 +43,15 @@ class ModelFactory:
     @staticmethod
     def create_model_with_hyperparams(model_type: str, hyperparams: dict) -> Model:
         """
-        Creates a model of the specified type with the given hyperparameters.
+        Create a model of the specified type with the given hyperparameters.
 
-        Parameters:
-            model_type (str): The type of model to create.
-            hyperparams (dict): A dictionary of hyperparameters for the model.
-
-        Returns:
-            A model instance of the specified type, initialized with the given hyperparameters.
+        :param model_type: The type of model to create.
+        :type model_type: str
+        :param hyperparams: A dictionary of hyperparameters for the model.
+        :type hyperparams: dict
+        
+        :return: A model instance of the specified type, initialized with the given hyperparameters.
+        :rtype: Model
         """
         factory = ModelFactory.get_factory(model_type)
         return factory.create_model_with_hyperparams(hyperparams)
@@ -56,15 +59,15 @@ class ModelFactory:
     @staticmethod
     def create_model_from_pickled(pickled_file_path: str) -> Model:
         """
-        Creates a model by loading it from a pickled file.
-
-        Parameters:
-            pickled_file_path (str): The file path to the pickled model file.
-
-        Returns:
-            A model instance loaded from the pickled file.
-
-        Raises:
+        Create a model by loading it from a pickled file.
+        
+        :param pickled_file_path: The file path to the pickled model file.
+        :type pickled_file_path: str
+        
+        :return: A model instance loaded from the pickled file.
+        :rtype: Model
+        
+        :raises:
             IOError: If there is an error loading the model from the file.
             TypeError: If the loaded model is not of a supported type.
         """
@@ -81,35 +84,38 @@ class ModelFactory:
 
         raise TypeError("The loaded model is not of a supported type")
 
+
 class XGBoostFactory(ModelFactory):
     """
     A factory for creating XGBoost model objects, either from hyperparameters or by loading from pickled files.
+    
     Inherits from ModelFactory and specifies creation methods for XGBoost models.
     """
-    
+
     def create_model_with_hyperparams(self, hyperparams: dict) -> XGBoostModel:
         """
-        Creates an XGBoostModel with the given hyperparameters.
+        Create an XGBoostModel with the given hyperparameters.
 
-        Parameters:
-            hyperparams (dict): A dictionary of hyperparameters for the XGBoost model.
-
-        Returns:
-            An instance of XGBoostModel initialized with the given hyperparameters.
+        :param hyperparams: A dictionary of hyperparameters for the XGBoost model.
+        :type hyperparams: dict
+        
+        :return: An instance of XGBoostModel initialized with the given hyperparameters.
+        :rtype: XGBoostModel
         """
         return XGBoostModel(params_or_model=hyperparams)
 
     def create_model_from_pickled(self, loaded_model) -> XGBoostModel:
         """
-        Recreates an XGBoostModel from a loaded pickled model.
+        Recreate an XGBoostModel from a loaded pickled model.
 
-        Parameters:
-            loaded_model: The loaded model object, expected to be an instance of xgb.Booster or xgb.XGBClassifier.
+        
+        :param loaded_model: The loaded model object, expected to be an instance of xgb.Booster or xgb.XGBClassifier.
+        :type loaded_model: Model
+        
+        :return: An instance of XGBoostModel created from the loaded model.
+        :rtype: XGBoostModel
 
-        Returns:
-            An instance of XGBoostModel created from the loaded model.
-
-        Raises:
+        :raises:
             TypeError: If the loaded model is not a supported implementation of the XGBoost model.
         """
         if isinstance(loaded_model, (xgb.Booster, xgb.XGBClassifier)):

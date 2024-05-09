@@ -1,11 +1,13 @@
 import unittest
 import numpy as np
 import xgboost as xgb
-from ModelFactories import ModelFactory, XGBoostFactory
-from Models import XGBoostModel
-from DataPreparingStrategy import ToDmatrixStrategy, DataPreparingStrategy
-from BaseModel import BaseModelManager
 from xgboost.sklearn import XGBClassifier
+
+
+from .ModelFactories import ModelFactory, XGBoostFactory
+from .Models import XGBoostModel
+from .DataPreparingStrategy import ToDmatrixStrategy, DataPreparingStrategy
+from .BaseModel import BaseModelManager
 
 class IntegrationTests(unittest.TestCase):
     def setUp(self):

@@ -1,19 +1,26 @@
 import pickle
 from io import BytesIO
-from Models import Model
+
+from .Models import Model
 
 class BaseModelManager:
+    """ 
+    Manager class for handling the base model with the design pattern Singleton behavior.
+
+    Attributes:
+        __baseModel (Model): The base model instance.
+    """
     __baseModel = None
 
     @classmethod
     def set_base_model(cls, model: Model):
         """
-        Sets the base model for the manager, ensuring Singleton behavior.
+        Set the base model for the manager, ensuring Singleton behavior.
         
-        Parameters:
-            model (Model): The model to be set as the base model.
+        :param model: The model to be set as the base model.
+        :type model: Model
             
-        Raises:
+        :raises:
             TypeError: If the base model has already been initialized.
         """
         if cls.__baseModel is None:
@@ -24,12 +31,13 @@ class BaseModelManager:
     @classmethod
     def get_instance(cls) -> Model:
         """
-        Returns the instance of the base model, ensuring Singleton access.
+        Return the instance of the base model, ensuring Singleton access.
         
-        Returns:
-            The base model instance.
+        
+        :return: The base model instance.
+        :rtype: Model
             
-        Raises:
+        :raises:
             TypeError: If the base model has not been initialized yet.
         """
         if cls.__baseModel is None:
@@ -39,15 +47,14 @@ class BaseModelManager:
     @classmethod
     def clone_base_model(cls) -> Model:
         """
-        Creates and returns a deep clone of the base model, following the Prototype pattern.
+        Create and return a deep clone of the base model, following the Prototype pattern.
         
         This method uses serialization and deserialization to clone complex model attributes,
         allowing for independent modification of the cloned model.
         
-        Returns:
-            A cloned instance of the base model.
+        :return: A cloned instance of the base model.
 
-        Raises:
+        :raises:
             TypeError: If the base model has not been initialized yet.
         """
         if cls.__baseModel is None:
