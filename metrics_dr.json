@@ -1,0 +1,1702 @@
+{
+    "100": {
+        "min_confidence_level": 0.10065611340452525,
+        "PopulationPercentage": 1.0,
+        "Metrics": {
+            "Accuracy": 0.895,
+            "RocAuc": 0.941196875,
+            "Precision": 0.7092511013215859,
+            "Recall": 0.805,
+            "F1Score": 0.7540983606557377,
+            "MatthewsCorrCoef": 0.6899143324820086,
+            "Specificity": 0.9175,
+            "Sensitivity": 0.805,
+            "BalancedAccuracy": 0.8612500000000001,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.7092511013215859
+        }
+    },
+    "99": {
+        "min_confidence_level": 0.11219882587831051,
+        "PopulationPercentage": 0.992,
+        "Metrics": {
+            "Accuracy": 0.9022177419354839,
+            "RocAuc": 0.9453724747474748,
+            "Precision": 0.7351598173515982,
+            "Recall": 0.805,
+            "F1Score": 0.7684964200477328,
+            "MatthewsCorrCoef": 0.707846365382912,
+            "Specificity": 0.9267676767676768,
+            "Sensitivity": 0.805,
+            "BalancedAccuracy": 0.8658838383838384,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.7351598173515982
+        }
+    },
+    "98": {
+        "min_confidence_level": 0.12655900434913936,
+        "PopulationPercentage": 0.983,
+        "Metrics": {
+            "Accuracy": 0.9094608341810784,
+            "RocAuc": 0.9490981694185212,
+            "Precision": 0.7619047619047619,
+            "Recall": 0.8040201005025126,
+            "F1Score": 0.7823960880195601,
+            "MatthewsCorrCoef": 0.7257055049033416,
+            "Specificity": 0.9362244897959183,
+            "Sensitivity": 0.8040201005025126,
+            "BalancedAccuracy": 0.8701222951492155,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.7619047619047619
+        }
+    },
+    "97": {
+        "min_confidence_level": 0.18529784600359292,
+        "PopulationPercentage": 0.971,
+        "Metrics": {
+            "Accuracy": 0.9207003089598352,
+            "RocAuc": 0.9573092144661128,
+            "Precision": 0.8080808080808081,
+            "Recall": 0.8040201005025126,
+            "F1Score": 0.8060453400503778,
+            "MatthewsCorrCoef": 0.7562113401130733,
+            "Specificity": 0.9507772020725389,
+            "Sensitivity": 0.8040201005025126,
+            "BalancedAccuracy": 0.8773986512875258,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.8080808080808081
+        }
+    },
+    "96": {
+        "min_confidence_level": 0.2549022392656033,
+        "PopulationPercentage": 0.964,
+        "Metrics": {
+            "Accuracy": 0.9253112033195021,
+            "RocAuc": 0.9611810799542023,
+            "Precision": 0.8272251308900523,
+            "Recall": 0.8020304568527918,
+            "F1Score": 0.8144329896907216,
+            "MatthewsCorrCoef": 0.767837632085578,
+            "Specificity": 0.9569752281616688,
+            "Sensitivity": 0.8020304568527918,
+            "BalancedAccuracy": 0.8795028425072303,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.8272251308900523
+        }
+    },
+    "95": {
+        "min_confidence_level": 0.2549022392656033,
+        "PopulationPercentage": 0.964,
+        "Metrics": {
+            "Accuracy": 0.9253112033195021,
+            "RocAuc": 0.9611810799542023,
+            "Precision": 0.8272251308900523,
+            "Recall": 0.8020304568527918,
+            "F1Score": 0.8144329896907216,
+            "MatthewsCorrCoef": 0.767837632085578,
+            "Specificity": 0.9569752281616688,
+            "Sensitivity": 0.8020304568527918,
+            "BalancedAccuracy": 0.8795028425072303,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.8272251308900523
+        }
+    },
+    "94": {
+        "min_confidence_level": 0.2924162544126787,
+        "PopulationPercentage": 0.94,
+        "Metrics": {
+            "Accuracy": 0.9404255319148936,
+            "RocAuc": 0.966203791769704,
+            "Precision": 0.8982035928143712,
+            "Recall": 0.7936507936507936,
+            "F1Score": 0.8426966292134831,
+            "MatthewsCorrCoef": 0.8084726377919161,
+            "Specificity": 0.9773635153129161,
+            "Sensitivity": 0.7936507936507936,
+            "BalancedAccuracy": 0.8855071544818549,
+            "NPV": 0.9495472186287193,
+            "PPV": 0.8982035928143712
+        }
+    },
+    "93": {
+        "min_confidence_level": 0.4968053268050945,
+        "PopulationPercentage": 0.933,
+        "Metrics": {
+            "Accuracy": 0.9431939978563773,
+            "RocAuc": 0.9667732400755038,
+            "Precision": 0.8957055214723927,
+            "Recall": 0.8021978021978022,
+            "F1Score": 0.846376811594203,
+            "MatthewsCorrCoef": 0.8135172731932486,
+            "Specificity": 0.9773635153129161,
+            "Sensitivity": 0.8021978021978022,
+            "BalancedAccuracy": 0.8897806587553592,
+            "NPV": 0.9532467532467532,
+            "PPV": 0.8957055214723927
+        }
+    },
+    "92": {
+        "min_confidence_level": 0.5027559177764437,
+        "PopulationPercentage": 0.923,
+        "Metrics": {
+            "Accuracy": 0.9501625135427952,
+            "RocAuc": 0.9688999236058059,
+            "Precision": 0.9056603773584906,
+            "Recall": 0.8228571428571428,
+            "F1Score": 0.8622754491017964,
+            "MatthewsCorrCoef": 0.833362452712088,
+            "Specificity": 0.9799465240641712,
+            "Sensitivity": 0.8228571428571428,
+            "BalancedAccuracy": 0.901401833460657,
+            "NPV": 0.9594240837696335,
+            "PPV": 0.9056603773584906
+        }
+    },
+    "91": {
+        "min_confidence_level": 0.5052178835884096,
+        "PopulationPercentage": 0.917,
+        "Metrics": {
+            "Accuracy": 0.9520174482006543,
+            "RocAuc": 0.9692472915980748,
+            "Precision": 0.9150326797385621,
+            "Recall": 0.8187134502923976,
+            "F1Score": 0.8641975308641975,
+            "MatthewsCorrCoef": 0.8370728709585787,
+            "Specificity": 0.982573726541555,
+            "Sensitivity": 0.8187134502923976,
+            "BalancedAccuracy": 0.9006435884169763,
+            "NPV": 0.9594240837696335,
+            "PPV": 0.9150326797385621
+        }
+    },
+    "90": {
+        "min_confidence_level": 0.5052178835884096,
+        "PopulationPercentage": 0.917,
+        "Metrics": {
+            "Accuracy": 0.9520174482006543,
+            "RocAuc": 0.9692472915980748,
+            "Precision": 0.9150326797385621,
+            "Recall": 0.8187134502923976,
+            "F1Score": 0.8641975308641975,
+            "MatthewsCorrCoef": 0.8370728709585787,
+            "Specificity": 0.982573726541555,
+            "Sensitivity": 0.8187134502923976,
+            "BalancedAccuracy": 0.9006435884169763,
+            "NPV": 0.9594240837696335,
+            "PPV": 0.9150326797385621
+        }
+    },
+    "89": {
+        "min_confidence_level": 0.5165853360477594,
+        "PopulationPercentage": 0.891,
+        "Metrics": {
+            "Accuracy": 0.9629629629629629,
+            "RocAuc": 0.9727839466731137,
+            "Precision": 0.9562043795620438,
+            "Recall": 0.8291139240506329,
+            "F1Score": 0.8881355932203391,
+            "MatthewsCorrCoef": 0.8692402875031005,
+            "Specificity": 0.9918144611186903,
+            "Sensitivity": 0.8291139240506329,
+            "BalancedAccuracy": 0.9104641925846616,
+            "NPV": 0.9641909814323607,
+            "PPV": 0.9562043795620438
+        }
+    },
+    "88": {
+        "min_confidence_level": 0.5225359270191086,
+        "PopulationPercentage": 0.88,
+        "Metrics": {
+            "Accuracy": 0.9704545454545455,
+            "RocAuc": 0.9732538590860462,
+            "Precision": 0.9847328244274809,
+            "Recall": 0.8431372549019608,
+            "F1Score": 0.9084507042253522,
+            "MatthewsCorrCoef": 0.8947779812612577,
+            "Specificity": 0.9972489683631361,
+            "Sensitivity": 0.8431372549019608,
+            "BalancedAccuracy": 0.9201931116325485,
+            "NPV": 0.9679572763684913,
+            "PPV": 0.9847328244274809
+        }
+    },
+    "87": {
+        "min_confidence_level": 0.5696426815994957,
+        "PopulationPercentage": 0.87,
+        "Metrics": {
+            "Accuracy": 0.9758620689655172,
+            "RocAuc": 0.9735743162901308,
+            "Precision": 0.984375,
+            "Recall": 0.8689655172413793,
+            "F1Score": 0.9230769230769231,
+            "MatthewsCorrCoef": 0.9113132906671726,
+            "Specificity": 0.9972413793103448,
+            "Sensitivity": 0.8689655172413793,
+            "BalancedAccuracy": 0.933103448275862,
+            "NPV": 0.9743935309973046,
+            "PPV": 0.984375
+        }
+    },
+    "86": {
+        "min_confidence_level": 0.5900388816637598,
+        "PopulationPercentage": 0.86,
+        "Metrics": {
+            "Accuracy": 0.9790697674418605,
+            "RocAuc": 0.9741965096438798,
+            "Precision": 0.991869918699187,
+            "Recall": 0.8776978417266187,
+            "F1Score": 0.9312977099236641,
+            "MatthewsCorrCoef": 0.9213973019671833,
+            "Specificity": 0.9986130374479889,
+            "Sensitivity": 0.8776978417266187,
+            "BalancedAccuracy": 0.9381554395873037,
+            "NPV": 0.9769335142469471,
+            "PPV": 0.991869918699187
+        }
+    },
+    "85": {
+        "min_confidence_level": 0.5983811107510137,
+        "PopulationPercentage": 0.851,
+        "Metrics": {
+            "Accuracy": 0.982373678025852,
+            "RocAuc": 0.9766914959652391,
+            "Precision": 0.9918032786885246,
+            "Recall": 0.8962962962962963,
+            "F1Score": 0.9416342412451362,
+            "MatthewsCorrCoef": 0.9329407289628899,
+            "Specificity": 0.9986033519553073,
+            "Sensitivity": 0.8962962962962963,
+            "BalancedAccuracy": 0.9474498241258018,
+            "NPV": 0.9807956104252401,
+            "PPV": 0.9918032786885246
+        }
+    },
+    "84": {
+        "min_confidence_level": 0.6023355471834615,
+        "PopulationPercentage": 0.847,
+        "Metrics": {
+            "Accuracy": 0.9822904368358913,
+            "RocAuc": 0.9771431543903455,
+            "Precision": 0.9918032786885246,
+            "Recall": 0.8962962962962963,
+            "F1Score": 0.9416342412451362,
+            "MatthewsCorrCoef": 0.9328858204151856,
+            "Specificity": 0.9985955056179775,
+            "Sensitivity": 0.8962962962962963,
+            "BalancedAccuracy": 0.9474459009571369,
+            "NPV": 0.9806896551724138,
+            "PPV": 0.9918032786885246
+        }
+    },
+    "83": {
+        "min_confidence_level": 0.6023355471834615,
+        "PopulationPercentage": 0.847,
+        "Metrics": {
+            "Accuracy": 0.9822904368358913,
+            "RocAuc": 0.9771431543903455,
+            "Precision": 0.9918032786885246,
+            "Recall": 0.8962962962962963,
+            "F1Score": 0.9416342412451362,
+            "MatthewsCorrCoef": 0.9328858204151856,
+            "Specificity": 0.9985955056179775,
+            "Sensitivity": 0.8962962962962963,
+            "BalancedAccuracy": 0.9474459009571369,
+            "NPV": 0.9806896551724138,
+            "PPV": 0.9918032786885246
+        }
+    },
+    "82": {
+        "min_confidence_level": 0.604038570785083,
+        "PopulationPercentage": 0.82,
+        "Metrics": {
+            "Accuracy": 0.9829268292682927,
+            "RocAuc": 0.9782917993674142,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9022556390977443,
+            "F1Score": 0.9448818897637795,
+            "MatthewsCorrCoef": 0.9362704364442451,
+            "Specificity": 0.9985443959243085,
+            "Sensitivity": 0.9022556390977443,
+            "BalancedAccuracy": 0.9504000175110264,
+            "NPV": 0.9814020028612304,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "81": {
+        "min_confidence_level": 0.6169409096853815,
+        "PopulationPercentage": 0.811,
+        "Metrics": {
+            "Accuracy": 0.9852034525277436,
+            "RocAuc": 0.9791872474180512,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.916030534351145,
+            "F1Score": 0.9523809523809524,
+            "MatthewsCorrCoef": 0.9446807176415604,
+            "Specificity": 0.9985294117647059,
+            "Sensitivity": 0.916030534351145,
+            "BalancedAccuracy": 0.9572799730579254,
+            "NPV": 0.9840579710144928,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "80": {
+        "min_confidence_level": 0.6258601800729751,
+        "PopulationPercentage": 0.801,
+        "Metrics": {
+            "Accuracy": 0.9875156054931336,
+            "RocAuc": 0.980170265780731,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9302325581395349,
+            "F1Score": 0.96,
+            "MatthewsCorrCoef": 0.9532977932950634,
+            "Specificity": 0.9985119047619048,
+            "Sensitivity": 0.9302325581395349,
+            "BalancedAccuracy": 0.9643722314507198,
+            "NPV": 0.986764705882353,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "79": {
+        "min_confidence_level": 0.6378801318749324,
+        "PopulationPercentage": 0.793,
+        "Metrics": {
+            "Accuracy": 0.9886506935687264,
+            "RocAuc": 0.980721334586466,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9375,
+            "F1Score": 0.963855421686747,
+            "MatthewsCorrCoef": 0.9576627392212339,
+            "Specificity": 0.9984962406015038,
+            "Sensitivity": 0.9375,
+            "BalancedAccuracy": 0.9679981203007519,
+            "NPV": 0.9880952380952381,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "78": {
+        "min_confidence_level": 0.6378801318749324,
+        "PopulationPercentage": 0.793,
+        "Metrics": {
+            "Accuracy": 0.9886506935687264,
+            "RocAuc": 0.980721334586466,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9375,
+            "F1Score": 0.963855421686747,
+            "MatthewsCorrCoef": 0.9576627392212339,
+            "Specificity": 0.9984962406015038,
+            "Sensitivity": 0.9375,
+            "BalancedAccuracy": 0.9679981203007519,
+            "NPV": 0.9880952380952381,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "77": {
+        "min_confidence_level": 0.6378801318749324,
+        "PopulationPercentage": 0.793,
+        "Metrics": {
+            "Accuracy": 0.9886506935687264,
+            "RocAuc": 0.980721334586466,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9375,
+            "F1Score": 0.963855421686747,
+            "MatthewsCorrCoef": 0.9576627392212339,
+            "Specificity": 0.9984962406015038,
+            "Sensitivity": 0.9375,
+            "BalancedAccuracy": 0.9679981203007519,
+            "NPV": 0.9880952380952381,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "76": {
+        "min_confidence_level": 0.6378801318749324,
+        "PopulationPercentage": 0.793,
+        "Metrics": {
+            "Accuracy": 0.9886506935687264,
+            "RocAuc": 0.980721334586466,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9375,
+            "F1Score": 0.963855421686747,
+            "MatthewsCorrCoef": 0.9576627392212339,
+            "Specificity": 0.9984962406015038,
+            "Sensitivity": 0.9375,
+            "BalancedAccuracy": 0.9679981203007519,
+            "NPV": 0.9880952380952381,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "75": {
+        "min_confidence_level": 0.8795720602491479,
+        "PopulationPercentage": 0.751,
+        "Metrics": {
+            "Accuracy": 0.996005326231691,
+            "RocAuc": 0.994051187156298,
+            "Precision": 0.9917355371900827,
+            "Recall": 0.9836065573770492,
+            "F1Score": 0.9876543209876544,
+            "MatthewsCorrCoef": 0.9852833998701146,
+            "Specificity": 0.9984101748807631,
+            "Sensitivity": 0.9836065573770492,
+            "BalancedAccuracy": 0.9910083661289062,
+            "NPV": 0.9968253968253968,
+            "PPV": 0.9917355371900827
+        }
+    },
+    "74": {
+        "min_confidence_level": 0.9018210127122782,
+        "PopulationPercentage": 0.744,
+        "Metrics": {
+            "Accuracy": 0.9973118279569892,
+            "RocAuc": 0.9941590709422359,
+            "Precision": 0.9913793103448276,
+            "Recall": 0.9913793103448276,
+            "F1Score": 0.9913793103448276,
+            "MatthewsCorrCoef": 0.9897869536569295,
+            "Specificity": 0.9984076433121019,
+            "Sensitivity": 0.9913793103448276,
+            "BalancedAccuracy": 0.9948934768284647,
+            "NPV": 0.9984076433121019,
+            "PPV": 0.9913793103448276
+        }
+    },
+    "73": {
+        "min_confidence_level": 0.9043176850544136,
+        "PopulationPercentage": 0.73,
+        "Metrics": {
+            "Accuracy": 0.9986301369863013,
+            "RocAuc": 0.9941037735849055,
+            "Precision": 1.0,
+            "Recall": 0.9905660377358491,
+            "F1Score": 0.9952606635071091,
+            "MatthewsCorrCoef": 0.9944753049098161,
+            "Specificity": 1.0,
+            "Sensitivity": 0.9905660377358491,
+            "BalancedAccuracy": 0.9952830188679245,
+            "NPV": 0.9984,
+            "PPV": 1.0
+        }
+    },
+    "72": {
+        "min_confidence_level": 0.9055603501506606,
+        "PopulationPercentage": 0.72,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "71": {
+        "min_confidence_level": 0.9067292560365992,
+        "PopulationPercentage": 0.711,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "70": {
+        "min_confidence_level": 0.9079719211328462,
+        "PopulationPercentage": 0.705,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "69": {
+        "min_confidence_level": 0.9079719211328462,
+        "PopulationPercentage": 0.705,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "68": {
+        "min_confidence_level": 0.9144863005159107,
+        "PopulationPercentage": 0.681,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "67": {
+        "min_confidence_level": 0.9144863005159107,
+        "PopulationPercentage": 0.681,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "66": {
+        "min_confidence_level": 0.9144863005159107,
+        "PopulationPercentage": 0.681,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "65": {
+        "min_confidence_level": 0.9494875468705876,
+        "PopulationPercentage": 0.65,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "64": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "63": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "62": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "61": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "60": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "59": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "58": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "57": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "56": {
+        "min_confidence_level": 0.9604358885821531,
+        "PopulationPercentage": 0.643,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1Score": 1.0,
+            "MatthewsCorrCoef": 1.0,
+            "Specificity": 1.0,
+            "Sensitivity": 1.0,
+            "BalancedAccuracy": 1.0,
+            "NPV": 1.0,
+            "PPV": 1.0
+        }
+    },
+    "55": {
+        "min_confidence_level": 0.9653371196614958,
+        "PopulationPercentage": 0.551,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "54": {
+        "min_confidence_level": 0.9737892790741465,
+        "PopulationPercentage": 0.541,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "53": {
+        "min_confidence_level": 0.9798546573567565,
+        "PopulationPercentage": 0.53,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "52": {
+        "min_confidence_level": 0.9798546573567565,
+        "PopulationPercentage": 0.53,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "51": {
+        "min_confidence_level": 0.9802458945237426,
+        "PopulationPercentage": 0.51,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "50": {
+        "min_confidence_level": 0.9807523068032671,
+        "PopulationPercentage": 0.504,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "49": {
+        "min_confidence_level": 0.9807523068032671,
+        "PopulationPercentage": 0.504,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "48": {
+        "min_confidence_level": 0.9810227150920007,
+        "PopulationPercentage": 0.483,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "47": {
+        "min_confidence_level": 0.9811932892973728,
+        "PopulationPercentage": 0.47,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "46": {
+        "min_confidence_level": 0.9814808838122292,
+        "PopulationPercentage": 0.462,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "45": {
+        "min_confidence_level": 0.9821022907619978,
+        "PopulationPercentage": 0.45,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "44": {
+        "min_confidence_level": 0.9823040541139143,
+        "PopulationPercentage": 0.443,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "43": {
+        "min_confidence_level": 0.982355081515357,
+        "PopulationPercentage": 0.433,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "42": {
+        "min_confidence_level": 0.982355081515357,
+        "PopulationPercentage": 0.433,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "41": {
+        "min_confidence_level": 0.982355081515357,
+        "PopulationPercentage": 0.433,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "40": {
+        "min_confidence_level": 0.9825239710292278,
+        "PopulationPercentage": 0.402,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "39": {
+        "min_confidence_level": 0.9825398794144801,
+        "PopulationPercentage": 0.394,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "38": {
+        "min_confidence_level": 0.9826254898040905,
+        "PopulationPercentage": 0.389,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "37": {
+        "min_confidence_level": 0.9826254898040905,
+        "PopulationPercentage": 0.389,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "36": {
+        "min_confidence_level": 0.9826254898040905,
+        "PopulationPercentage": 0.389,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "35": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "34": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "33": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "32": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "31": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "30": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "29": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "28": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "27": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "26": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "25": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "24": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "23": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "22": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "21": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "20": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "19": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "18": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "17": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "16": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "15": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "14": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "13": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "12": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "11": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "10": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "9": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "8": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "7": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "6": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "5": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "4": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "3": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "2": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    },
+    "1": {
+        "min_confidence_level": 0.9876220750897843,
+        "PopulationPercentage": 0.355,
+        "Metrics": {
+            "Accuracy": 1.0,
+            "RocAuc": NaN,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1Score": 0.0,
+            "MatthewsCorrCoef": 0.0,
+            "Specificity": 1.0,
+            "Sensitivity": 0.0,
+            "BalancedAccuracy": 0.5,
+            "NPV": 1.0,
+            "PPV": 0.0
+        }
+    }
+}
